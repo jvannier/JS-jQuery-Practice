@@ -3,9 +3,13 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> $("#buttonName").click(()=> {
-       $('input[name="name"]').val("Name")
-    })</script>
+    <script> 
+    $(document).ready(function() {
+        $("#buttonName").click(()=> {
+       let v = $('input[name="name"]').val("Name");
+    })
+})
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">     
 </head>
