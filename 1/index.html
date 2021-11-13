@@ -12,6 +12,19 @@
 
 <body>
     <input type="button" value="Click to add new div tag" onclick="createDiv()" />
+    <script> 
+        let button = $("<button>").attr("class","divClass")
+        button.attr("id","Mydiv")
+        button.css("color","red")
+        button.html("my first div")
+        $("body").append(button)
+        
+        $("button").click(function(e){ 
+            console.log(e.target.tagName)
+        })
+    </script>
+        
+        
 </body>
 
 </html>
