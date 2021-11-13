@@ -1,13 +1,22 @@
+<!-- Determine how to get the value of a textbox using jQuery? -->
 <!DOCTYPE html>
 <html>
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>How to get the value of a textbox using jQuery</title>    
 </head>
 <body>
     <input type="text" value="Input text here">
+    <script>
+            $(document).ready(function() {
+            let x = $("input")
+                console.log(x[0].value)
+            })
+     function printValue(e) {
+         console.log(e.target.value)
+     }
+        </script>
 </body>
 </html>
