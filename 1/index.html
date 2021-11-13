@@ -23,6 +23,15 @@ $("body").append(button)
 $("button").click(function(e){ 
     console.log(e.target.tagName)
 })
+
+function createDiv(){
+    let button=$("<button>");
+        button.addClass("class" , "divClass");
+        button.css("color","Green");
+        button.attr("id","div");
+        button.html("New div created ");
+    $("body").append(button)
+    }
 </script>
 
  
