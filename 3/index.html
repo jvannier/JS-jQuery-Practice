@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <input id="input" type="text" value="Input text here">
+    <input type="text" value="Input text here">
 
     <script>
-        $("#input").each(function () {
-            alert(input.value);
+        $("input").each(function () {
+            alert($(this).val());
         });
     </script>
 </body>
