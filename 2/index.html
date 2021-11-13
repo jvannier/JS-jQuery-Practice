@@ -12,6 +12,15 @@
     <p>Please Input your Name:</p>
     <input type="text" name="name">
     <input id="buttonName" type="button" value="Click to set name" />
+    <script>
+        $("#buttonName").click(function(e)
+        {
+            $('input[name="name"]').val('Kevin');
+            
+        })
+
+    </script>
+
 </body>
 
 </html>
