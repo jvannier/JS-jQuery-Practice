@@ -8,6 +8,24 @@
     <title>How to get the value of a textbox using jQuery</title>    
 </head>
 <body>
-    <input type="text" value="Input text here">
+    <input type="text" value="Input text here" onChange="printValue()">
+
+<script>
+    //This gives the ability to add a text box on screen
+    //Still needs some work
+    $(document).ready(function () {
+        let x = 3('input')
+        console.log(x[e].value)
+    })
+
+    function printValue() {
+        console.log(e.target.value)
+    }
+</script>
 </body>
+
+
+
+<script src="https://code.jquery.com/jquery-git.js"></script>
+
 </html>
