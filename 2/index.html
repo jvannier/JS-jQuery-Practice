@@ -3,7 +3,7 @@
 
 <head>
     <script src="https://code.jquery.com/jquery-git.js"></script>
-    <script> //Your Code Here </script>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">     
 </head>
@@ -12,6 +12,17 @@
     <p>Please Input your Name:</p>
     <input type="text" name="name">
     <input id="buttonName" type="button" value="Click to set name" />
+
+    <script> 
+    
+    // preferred way to make sure document is ready
+    $(document).ready(function () {
+            $('#buttonName').click(function () {
+                $('input[name="name"]').val('Derek');
+        });
+    });
+
+    </script>
 </body>
 
 </html>
